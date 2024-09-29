@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('day-background.jpg');
+    background-size: cover;
+}
+
+body.night {
+    background-image: url('night-background.jpg');
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 添加日夜模式切换 */
+#modeSwitch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
