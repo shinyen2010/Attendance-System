@@ -9,7 +9,7 @@ document.getElementById('registerForm')?.addEventListener('submit', function (e)
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('https://attendance-system-0yo7.onrender.com', {
+    fetch('https://your-service.onrender.com/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('https://attendance-system-0yo7.onrender.com', {
+    fetch('https://your-service.onrender.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
 
 // 打卡请求
 document.getElementById('checkInButton')?.addEventListener('click', function () {
-    fetch('https://attendance-system-0yo7.onrender.com', {
+    fetch('https://your-service.onrender.com/check-in', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
